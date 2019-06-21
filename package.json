@@ -1,8 +1,8 @@
 {
-  "name": "hatena-blog-theme-boilerplate",
+  "name": "focus",
   "version": "2.0.0",
   "description": "Boilerplate for Hatena Blog theme",
-  "author": "Hatena Blog",
+  "author": "yamshta",
   "license": "MIT",
   "scripts": {
     "prestart": "npm run build",
