@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-/* 2カラムレイアウト */
+/* 2カラムレイアウト*/
 #content-inner {
     display: flex;
     flex-direction: column;
@@ -82,6 +82,7 @@ h1,h2,h3,h4,h5,h6 {
 /* 下記のスタイルを適用するとテーマを1カラムレイアウトにできます。
 利用するにはコメントアウトを解除してください。
 （2カラムレイアウトの場合はコメントアウト全体が不要です）
+---- END 1カラム */
 
 #content-inner {
     flex-direction: column;
@@ -128,7 +129,6 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
----- END 1カラム */
 
 /* ヘッダ */
 #blog-title {

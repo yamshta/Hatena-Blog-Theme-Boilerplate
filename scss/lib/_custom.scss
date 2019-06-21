@@ -1,0 +1,193 @@
+html,
+body {
+  letter-spacing: .05rem;
+  line-height: 1.8;
+  font-family: "Lato", Arial, Emoji, -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+
+}
+
+/* container */
+#container,
+#footer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#content-inner {
+  padding: 0 20px;
+}
+#wrapper,
+#box2-inner {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+.hatena-module {
+  @media #{$mq-md} {
+    padding: 0 30px 0 0;
+  }
+}
+
+/* ヘッダ */
+#globalheader-container {
+  background-color: #fff;
+  color: $text-light;
+}
+#blog-title {
+  text-align: center;
+  width: 100%;
+  margin: 6em 0;
+  @media #{$mq-sm} {
+    text-align: center;
+  }
+}
+#blog-title-content {
+  margin: auto;
+}
+.header-image-enable {
+  #blog-title #blog-title-inner {
+    background-position: center !important;
+    background-size: cover;
+    @media #{$mq-md} {
+      height: 320px;
+    }
+  }
+  #blog-title-content {
+    margin: auto;
+  }
+
+  #blog-title #blog-description {
+    font-weight: normal;
+    padding: 0 2em;
+    margin: 1.5em 0 0;
+  }
+}
+#title {
+  font-size: 1.6rem;
+  letter-spacing: 6px;
+  @media #{$mq-md} {
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+  }
+  @media #{$mq-xs} {
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+  }
+}
+
+/* entry */
+.entry-header {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 1em;
+}
+.date {
+  margin-bottom: 2em;
+  a {
+    color: $text-light;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.entry-title {
+  font-size: 1.5rem;
+  @media #{$mq-md} {
+    font-size: 2rem;
+  }
+}
+.categories {
+  margin: 2em 0 1em;
+  a {
+    color: $text-light;
+    text-decoration: none!important;
+    font-size: .7rem;
+    margin-right: 1em;
+  }
+}
+
+/* 記事内の書式 */
+.entry-content {
+  font-size: 14px;
+  @media #{$mq-md} {
+    font-size: 1rem;
+  }
+  -webkit-font-smoothing: antialiased;
+  p {
+    margin: 1.6em 0;
+  }
+  img {
+    padding: 10px;
+    border: 1px solid $border;
+    max-width: 99%;
+    box-sizing: border-box;
+    max-height: 500px;
+    width: auto !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 2em 0 0 0;
+  }
+  h1,
+  h2 {
+    padding-bottom: .6em;
+    border-bottom: 1px solid $border;
+  }
+  h2 {
+    @media #{$mq-md} {
+      font-size: 1.6rem;
+    }
+  }
+  h3 {
+    @media #{$mq-md} {
+      font-size: 1.4rem;
+    }
+  }
+  pre,
+  blockquote {
+    background-color: #f7f7f7;
+    border: none;
+    padding: 1.6em;
+    border-radius: 8px;
+  }
+  pre,
+  blockquote,
+  .hatena-asin-detail,
+  .embed-wrapper {
+    margin: 2em 0;
+  }
+  ul,
+  ol,
+  dd {
+    margin: 1.6em 0 1.6em 1.5em;
+  }
+  iframe {
+    margin: 2em 0 0!important;
+  }
+}
+
+.leave-comment-title {
+  border-radius: 4px;
+}
+
+.hatena-urllist {
+  line-height: 1.5;
+}
+.recent-entries {
+  li {
+    padding: .5em 0 1em;
+    font-size: .8rem;
+  }
+}
+
+.entry-list .list-entry-article {
+  padding: 15px 0;
+  .entry-title {
+    margin: .5em 0;
+  }
+}
