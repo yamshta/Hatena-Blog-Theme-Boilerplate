@@ -182,6 +182,9 @@ body {
   iframe {
     margin: 2em 0 0!important;
   }
+  code {
+    word-break: break-all;
+  }
 }
 
 .leave-comment-title {
@@ -190,12 +193,24 @@ body {
 
 .hatena-urllist {
   line-height: 1.5;
+  li a {
+    word-break: break-all;
+  }
+  .urllist-entry-body {
+    display: none;
+    @media #{$mq-sm} {
+      display: -webkit-box;
+    }
+  }
 }
 .recent-entries,
 .entries-access-ranking {
   li {
     padding: .5em 0 1em;
     font-size: .8rem;
+    a {
+      display: block;
+    }
   }
 }
 
@@ -217,11 +232,14 @@ body {
     justify-content: space-between;
   }
   .archive-entry {
-    width: 48%;
     background: #fff;
     margin: 0 0 8px 0;
     padding: 15px 0;
     position: relative;
+    width: 100%;
+    @media #{$mq-sm} {
+      width: 48%;
+    }
   }
   .date {
     margin: 0;
