@@ -79,3 +79,24 @@ boilerplate/
 
 - <https://github.com/hatena/Hatena-Blog-Theme-Boilerplate-Less>
   - BoilerplateのLessバージョンです。（開発終了）
+
+
+
+---
+
+# はてなブログ「一覧形式」のアイキャッチ画像を自由なサイズで表示する方法
+
+```js
+<script>
+(function(){
+    if(document.body.classList.contains('page-archive') || document.body.classList.contains('page-index')) {
+        var elements = document.getElementsByClassName('entry-thumb');
+        var re = /https%3A%2F%2F.+\.(jpg|jpeg|gif|png|bmp)/i;
+        Array.prototype.forEach.call(elements, function(element) {
+            var imageUri = re.exec(element.getAttribute('style'));
+            if(imageUri !== null) element.style.backgroundImage = 'url(' + decodeURIComponent(imageUri[0]) + ')';
+        });
+    }
+}());
+</script>
+```
